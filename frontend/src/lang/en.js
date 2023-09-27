@@ -333,8 +333,6 @@ export default {
     paidMessageSlide: 'slide',
     paidMessageReverseSlide: 'reverse slide',
 
-    // TODO: Membership
-
     // NOTE: Membership
     membershipMessage: 'Membership',
 

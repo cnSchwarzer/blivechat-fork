@@ -31,8 +31,8 @@ def reload_cookie():
     with shelve.open('data/login') as db:
         cookie = db.get('cookie')
         if cookie is not None: 
-            logger.info('成功载入了登录态')
+            logger.info('Login session restored')
             http_session.cookie_jar.update_cookies(cookie)
         else:
-            logger.info('当前无登录态')
+            logger.info('Currently not login')
             http_session.cookie_jar.clear()
